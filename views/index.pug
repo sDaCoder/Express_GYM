@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Using Plain HTML in PUG</title> -->
+    <title>#{title}</title>
+    style
+      include ../static/style.css
+</head>
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../static/Logo/Gym_logo_3.png" alt="GymImage" srcset="">
+            | sDaGym
+        </div>
+        <ul>
+            <li><a href = '/'>      Home           </a></li>
+            <li><a href = '/'>      About          </a></li>
+            <li><a href = '/'>      Contact Us     </a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <center>
+
+            <h2>Get this GYM membership for 60$ - Fill this Form now</h2>
+        </center>
+
+        <!-- <p> -->
+            <!-- |#{content} -->
+            |<!-- This is a Plain HTML using PUG. -->
+        <!-- </p> -->
+
+        <form action="/" id="Contact" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter Your name">
+            <input type="text" name="age" id="age" placeholder="Enter Your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter Your gender">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your Address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you..."></textarea>
+            <button class="btn">Submit</button>
+        </form>
+        
+    </div>
+    
+</body>
+</html>
