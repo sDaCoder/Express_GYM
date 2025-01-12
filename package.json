@@ -3,14 +3,22 @@
   "version": "1.0.0",
   "description": "This is the best package",
   "main": "tut71.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devcss": "postcss public/styles/tailwind.css -o public/styles/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
   "author": "sDa",
   "license": "ISC",
   "keywords": [],
   "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "ejs": "^3.1.10",
     "express": "^4.18.2",
-    "pug": "^3.0.2"
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "pug": "^3.0.2",
+    "tailwindcss": "^3.4.16"
   }
 }

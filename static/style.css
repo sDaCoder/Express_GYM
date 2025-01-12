@@ -8,9 +8,22 @@
 }
 
 body{
-    /* background-color: rgba(169, 169, 169, 0.329); */
     background: url('/static/victor-freitas-WvDYdXDzkhs-unsplash.jpg') no-repeat center center/cover;
     background-attachment: fixed;
+}
+
+#logoContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoContainer h1
+{
+    color: white;
+    font-weight: bold;
+    margin-right: auto;
 }
 
 /* !CSS FOR LOGO */
@@ -18,11 +31,8 @@ body{
 {
     display: flex;
     align-items: center;
-    padding: 0px 19px;
+    padding: 0px 5px;
 
-    color: white;
-    font-weight: bold;
-    margin-right: auto;
 }
 
 img{
@@ -37,6 +47,7 @@ nav{
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 ul{
@@ -53,6 +64,11 @@ a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+a:active{
+    color: red;
+    font-weight: bolder;
 }
 
 h2{

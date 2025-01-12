@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="shortcut icon" href="../static/Logo/Gym_logo_3.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav id="navbar">
+        
+        <div id="logoContainer">
+            <div id="logo">
+                <img src="../static/Logo/Gym_logo_3.png" alt="GymImage" srcset="">
+            </div>
+            <h1>sDaGym</h1>
+        </div>
+
+        <ul>
+            <li><a href='/'> Home </a></li>
+            <li><a href='/join-us'> Join Us </a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <center>
+            <h2> <%=message%> </h2>
+        </center>
+
+        <form action="/" id="Contact" method="post" urlencoded="true">
+            <input type="text" name="name" id="name" placeholder="Enter Your name">
+            <input type="text" name="age" id="age" placeholder="Enter Your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter Your gender">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your Address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you..."></textarea>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
